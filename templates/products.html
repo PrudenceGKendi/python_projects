@@ -1,0 +1,14 @@
+{% extends 'master.html' %}
+{% load static %}
+{%block title %} about {%endblock%}
+{%block content%}
+<div class="container">
+<h3>full name is {{name}}</h3>
+    <p>age is {{age}}</p>
+    <p>weight is {{weight}}</p>
+
+    {%for sub in subjects%}
+    <p>{{sub}}</p>
+    {%endfor%}
+</div>
+{%endblock%}
